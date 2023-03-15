@@ -1,6 +1,6 @@
 package animali.astratti;
 
-public class Aquila extends Animale{
+public class Aquila extends Animale implements CanFly{
     @Override
     public void verso() {
         System.out.println("Squack");
@@ -9,5 +9,10 @@ public class Aquila extends Animale{
     @Override
     public void mangia() {
         System.out.println("Conigli");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Sto volando!");
     }
 }

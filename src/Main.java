@@ -1,7 +1,4 @@
-import animali.astratti.Aquila;
-import animali.astratti.Cane;
-import animali.astratti.Delfino;
-import animali.astratti.Passerotto;
+import animali.astratti.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +22,17 @@ public class Main {
         cane.dormi();
         cane.verso();
 
+        faiVolare(passerotto);
 
+        faiNuotare(cane);
+
+    }
+
+    public static void faiVolare(CanFly flyingAnimal){
+        flyingAnimal.fly();
+    }
+
+    public static void faiNuotare(CanSwim swimmingAnimal){
+        swimmingAnimal.swim();
     }
 }
